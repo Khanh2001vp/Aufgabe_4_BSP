@@ -83,6 +83,7 @@ static int __init encrypt_init(void)
             pr_err("Failed to register /dev/encrypt\n");
             return major_number_encrypt;
         }
+    pr_info("Encrypt device registered\n");
 
 }
 

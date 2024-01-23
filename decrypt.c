@@ -84,6 +84,7 @@ static int __init decrypt_init(void)
             unregister_chrdev(major_number_encrypt, "encrypt");
             return major_number_decrypt;
         }
+    pr_info("Decrypt device registered\n");
 
 }
 static void __exit decrypt_exit(void)
